@@ -1,13 +1,9 @@
-import Home from './routes/home/home.componentt';
 import { Routes, Route } from 'react-router-dom';
+
+import Home from './routes/home/home.component';
 import Navigation from './routes/navigation/navigation.component';
 import Authentication from './routes/authentication/authentication.component';
-
-const Shop = () => {
-  return(
-    <h1>I am the shop page</h1>
-  )
-}
+import Shop from './routes/shop/shop.component';
 
 const App = () => {
   return (
@@ -18,7 +14,7 @@ const App = () => {
         <Route path='auth' element={<Authentication />} />
       </Route>
     </Routes>
-  )
+  );
 };
 
 export default App;
